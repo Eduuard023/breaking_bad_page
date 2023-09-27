@@ -1,5 +1,60 @@
-$bgColor: Red;
+@use 'variables';
+@use 'logo';
+@use 'about';
+
+@font-face{
+    font-family: game ;
+    src: url(../../assets/fonts/Game\ of\ Thrones.ttf);
+    font-weight: 400;
+}
+
+@mixin text ($fontSize: 20px){
+    font-family: 'Mooli', sans-serif;
+    font-size: $fontSize;
+    color: variables.$textColor;
+    font-weight: 200px;
+}
+
+@mixin title($fontSize: 24px){
+    font-size: $fontSize;
+    color: variables.$titleColor;
+    font-family: game;
+    border-bottom: 2px solid variables.$titleColor;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
 
 body{
-    background-color: $bgColor;
+    background-color: variables.$bgColor;
+}
+
+.dragon{
+    position: fixed;
+    right: 0;
+    height: 80px;
+
+    &--is-hidden{
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+.text{
+    @include text;
+}
+
+.title{
+    @include title;
 }

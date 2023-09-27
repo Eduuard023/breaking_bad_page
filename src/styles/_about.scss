@@ -1,0 +1,21 @@
+.about{
+    padding: 5.6vw;
+    height: 100vh;
+
+    &__content{
+        display: flex;
+        align-items: center;
+
+        &__image{
+            height: 450px;
+            width: 450px;
+            margin-right: 32px;
+            margin-top: 32px;
+            padding: 16px;
+        }
+
+        &__description{
+            margin-bottom: 24px;
+        }
+    }
+}
