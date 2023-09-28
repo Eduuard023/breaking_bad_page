@@ -5,7 +5,15 @@
         display: grid;
         gap: 24px;
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 24px;
+        padding-top: 40px;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 360px) and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
 
         &__item{
             padding: 26px;
@@ -23,6 +31,11 @@
                 height: 400px;
                 margin-bottom: 12px;
                 border-radius: 4px;
+
+                @media (max-width: 767px){
+                    width: 80%;
+                    height: 300px;
+                }
             }
 
             &__name{
