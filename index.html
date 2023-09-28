@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="./dist/images/dragon.gif" class="dragon " alt="dragon">
+    <img src="./dist/images/dragon.gif" class="dragon dragon--is-hidden " alt="dragon">
     <section class="logo">
         <h1>
             <img class="logo__item" src="./dist/images/Game-of-Thrones-logo.webp" alt="logo game of thrones">
@@ -43,32 +43,59 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="curiosities">
         <div class="title">
-            <h2 class="about_title title">Curiosities</h2>
+            <h2 class="curiosities_title title">Curiosities</h2>
         </div>
-        <div class="about__content">
-            <img class="about__content__image" src="./dist/images/stark.png" alt="logo targaryen">
+        <div class="curiosities__content">
+            <img class="curiosities__content__image" src="./dist/images/stark.png" alt="logo stark">
             <div>
-                <p class="about__content__description text">
+                <p class="curiosities__content__description text">
                     - Historical Inspiration: "Game of Thrones" is heavily inspired by real history. George R.R. Martin based many events and characters on historical facts,
                     such as the War of the Roses in England and figures like Richard III. This fusion of real history with elements of fantasy added a unique depth to the series.
                 </p>
-                <p class="about__content__description text">
+                <p class="curiosities__content__description text">
                     Dothraki Language: To bring authenticity to the Dothraki culture, the series hired a linguist, David J. Peterson, to create a fully functional language called Dothraki.
                     Peterson developed a complete vocabulary and grammar for the language, which became an essential part of the series.
                 </p>
-                <p class="about__content__description text">
+                <p class="curiosities__content__description text">
                     Red Wedding: The infamous "Red Wedding" is one of the most shocking moments in the series. The episode was based on historical events and exemplifies the series' reputation
                     for not sparing its main characters, surprising viewers with brutal twists.
                 </p>
-                <p class="about__content__description text">
+                <p class="curiosities__content__description text">
                     These curiosities highlight the complexity and richness of the "Game of Thrones" series, which captivated fans worldwide with its unique and detailed narrative.
-                </p>
-                
+                </p>               
             </div>
         </div>        
     </section>
+    <section class="houses">
+        <div>
+            <h2 class="houses__title title">Houses</h2>
+        </div>
+        <ul class="houses__list">
+            <li class="houses__list__item">
+                <img class="houses__list__item__image" src="./dist/images/stark_logo.png" alt="stark">
+                <p class="houses__list__item__name title">Stark</p>
+                <span class="houses__list__item__words text">Winter is Coming</span>
+            </li>
+            <li class="houses__list__item">
+                <img class="houses__list__item__image" src="./dist/images/shield_baratheon.png" alt="logo stark">
+                <p class="houses__list__item__name title">Baratheon</p>
+                <span class="houses__list__item__words text">Ours Is The Fury</span>
+            </li>
+            <li class="houses__list__item">
+                <img class="houses__list__item__image" src="./dist/images/targ_logo.png" alt="logo stark">
+                <p class="houses__list__item__name title">Targaryen</p>
+                <span class="houses__list__item__words text">Fire And Blood</span>
+            </li>
+            <li class="houses__list__item">
+                <img class="houses__list__item__image" src="./dist/images/shield_lannister.png" alt="logo stark">
+                <p class="houses__list__item__name title">Lannister</p>
+                <span class="houses__list__item__words text">Hear Me Roar!</span>
+            </li>
+        </ul>
+    </section>
+    
     <script src="./main.js"></script>
 </body>
 </html>

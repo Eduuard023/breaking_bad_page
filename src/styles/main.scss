@@ -1,6 +1,7 @@
 @use 'variables';
 @use 'logo';
 @use 'about';
+@use 'houses';
 
 @font-face{
     font-family: game ;
@@ -44,6 +45,7 @@ body{
     position: fixed;
     right: 0;
     height: 80px;
+    margin-top: 56px;
 
     &--is-hidden{
         opacity: 0;

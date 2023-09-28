@@ -1,4 +1,5 @@
-.about{
+.about,
+.curiosities{
     padding: 5.6vw;
     height: 100vh;
 
@@ -12,6 +13,10 @@
             margin-right: 32px;
             margin-top: 32px;
             padding: 16px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         &__description{
